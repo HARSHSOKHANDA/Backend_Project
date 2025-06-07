@@ -16,7 +16,7 @@ A Node.js CLI tool that generates a QR code image from a user-provided URL using
 
 A password-protected page built with Express.js. Users must enter the correct password to access the secret content.
 
-### 4. Band Name Generator (EJS)
+# Band Name Generator (EJS)
 
 A fun web app that generates random band names by combining a random adjective and noun. Built with Node.js, Express, and EJS templating.
 
@@ -27,6 +27,41 @@ A fun web app that generates random band names by combining a random adjective a
 - Stylish UI with custom CSS
 - Arrays of adjectives and nouns for endless combinations
 
----
+## Getting Started
 
-Each project has its own directory with source code and dependencies. To run a project, navigate to its folder, install dependencies with `npm install`, and start the server or script as described in its documentation or code comments.
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- npm
+
+### Installation
+
+1. Clone this repository or copy the project folder.
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Start the server:
+
+   ```sh
+   node index.js
+   ```
+
+4. Open your browser and go to [http://localhost:3000](http://localhost:3000)
+
+## Usage
+
+- Click the "Generate Name" button to get a new random band name.
+- The name is displayed in the center of the page.
+
+## Project Structure
+
+- `index.js` - Main server file (Express + EJS logic)
+- `views/` - EJS templates
+- `public/styles/main.css` - CSS styling
+
+## License
+
+MIT
