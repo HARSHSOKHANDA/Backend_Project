@@ -27,6 +27,15 @@ A fun web app that generates random band names by combining a random adjective a
 - Stylish UI with custom CSS
 - Arrays of adjectives and nouns for endless combinations
 
+### 5. JSON API
+A Node.js and Express.js project that serves data from a local recipe.json file via API endpoints.
+
+## Features
+
+- Serves JSON data through RESTful endpoints
+- Reads data from recipe.json
+- Easy to extend for additional endpoints or data
+
 ## Getting Started
 
 ### Prerequisites
