@@ -8,7 +8,7 @@ const API_URL = "https://secrets-api.appbrewery.com";
 //TODO 1: Fill in your values for the 3 types of auth.
 const yourUsername = "aryan";
 const yourPassword = "iamaryan";
-const yourAPIKey = "9344312d-6c83-4adc-bf07-67ae07cdc12f";
+const yourAPIKey = "6ef470bb-53c1-4d18-8c82-845fc3db2101";
 const yourBearerToken = "4d4a60ad-e551-4d4d-aba5-3f373c8fdfa4";
 
 app.get("/", (req, res) => {
@@ -54,6 +54,27 @@ app.get("/basicAuth", async (req, res) => {
   }
 });
 
+// fetch data help of .then .catch ------
+
+// app.get("/apiKey", (req, res) => {
+//   //TODO 4: Write your code here to hit up the /filter endpoint
+//   //Filter for all secrets with an embarassment score of 5 or greater
+//   //HINT: You need to provide a query parameter of apiKey in the request.
+//   try {
+//     axios(API_URL + "/filter", {
+//       params: {
+//         score: 8,
+//         apiKey: yourAPIKey,
+//       },
+//     }).then(result => {
+//       res.render("index.ejs", { content: JSON.stringify(result.data) });
+//     })
+//   } catch (error) {
+//     res.status(404).send(error.message);
+//   }
+// });
+
+
 app.get("/apiKey", async (req, res) => {
   //TODO 4: Write your code here to hit up the /filter endpoint
   //Filter for all secrets with an embarassment score of 5 or greater
@@ -70,6 +91,7 @@ app.get("/apiKey", async (req, res) => {
     res.status(404).send(error.message);
   }
 });
+
 
 // create header for a barer token to use request on api and handle
 const config = {
@@ -100,3 +122,5 @@ app.get("/bearerToken", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port: http://localhost:${port}`);
 });
+
+
