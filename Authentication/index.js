@@ -27,6 +27,20 @@ app.get("/noAuth", async (req, res) => {
   }
 });
 
+/*
+// Basic noAuth help of .then .catch
+app.get("/noAuth", (req, res) => {
+  axios.get(API_URL + "/random")
+    .then(result => {
+      res.render("index.ejs", { content: JSON.stringify(result.data) });
+    })
+    .catch(error => {
+      res.status(404).send(error.message);
+    });
+});
+*/
+
+
 app.get("/basicAuth", async (req, res) => {
   //TODO 3: Write your code here to hit up the /all endpoint
   //Specify that you only want the secrets from page 2
