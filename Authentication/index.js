@@ -64,7 +64,10 @@ app.get("/basicAuth", async (req, res) => {
     res.render("index.ejs", { content: JSON.stringify(result.data) });
 
   } catch (error) {
-    res.status(404).send(error.message);
+    // res.status(404).send(error.message);
+    // res.status(404).send("Something went wrong");
+    res.status(404).send(); 
+    // only 404 response send.
   }
 });
 
